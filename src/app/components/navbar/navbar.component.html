@@ -1,24 +1,28 @@
 <div class="topbar">
   <div class="container">
-    <div class="topbar__content row">
-      <div class="col-md-3 ml-auto d-md-block d-none">
-        <form class="topbar__search">
-          <div class="input-group"><span class="input-group-btn">
-            <button type="button" class="btn"><i class="fa fa-search" style="font-size:18px;"></i></button></span>
+    <div class="topbar-content row">
+      <div class="search-section col-md-3 ml-auto">
+        <form class="topbar-search">
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button type="button" class="btn">
+                <i class="fa fa-search" style="font-size:18px;"></i>
+              </button>
+            </span>
           <input type="text" placeholder="SEARCH" class="form-control">
         </div>
         </form>
       </div>
-      <div class="col-md-3 topbar__logo">
-        <a href="navbar.component.html">
-          <div class="col-md-4 topbar__logo">
-            <img src="img/logo.png" class="topbar__logo__normal d-none d-md-inline-block">
-            <img src="/src/app/img/logo.png" class="topbar__logo__small d-inline-block d-md-none">
-          </div>
+      <div class="col-md-3 topbar-logo">
+        <a href="">
+          <img src="../../../assets/img/logo.png" alt="">
         </a>
       </div>
-      <div class="col-md-4 ml-auto d-md-block d-none">
-        <div class="topbar__cart"><a class="btn btn-outline-dark"><i class="fa fa-user-o" style="font-size:18px"></i><span>Log In</span></a></div>
+      <div class="login-section col-md-4 ml-auto">
+          <a class="login-link">
+            <i class="fa fa-user-o" style="font-size:20px; margin-right: 20px;"></i>
+            <span>Login</span>
+          </a>
       </div>
     </div>
   </div>
