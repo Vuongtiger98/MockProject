@@ -40,14 +40,17 @@
     line-height: 1.5;
     border-radius: 0;
     transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
+
+    &:hover {
+      color: #fff;
+      background-color: #343a40;
+      border-color: #343a40;
+      cursor: pointer;
+      text-decoration: none;
+  }
+
 }
-.login-link:hover {
-    color: #fff;
-    background-color: #343a40;
-    border-color: #343a40;
-    cursor: pointer;
-    text-decoration: none;
-}
+
 
 
 
