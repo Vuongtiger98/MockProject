@@ -10,6 +10,7 @@ import { MainComponent } from './components/main/main.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ShopComponent } from './components/shop/shop.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -17,20 +18,21 @@ import { ShopComponent } from './components/shop/shop.component';
     MainComponent,
     NavbarComponent,
     FooterComponent,
-    ShopComponent
+    ShopComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot([
-        {
-          path: '',
-          redirectTo: '/home',
-          pathMatch: 'full',
-        },
+        // {
+        //   path: '',
+        //   redirectTo: '/home',
+        //   pathMatch: 'full',
+        // },
         {
           path: 'home',
-          component: AppComponent,
+          component: MainComponent,
         },
         {
           path: 'shop',
