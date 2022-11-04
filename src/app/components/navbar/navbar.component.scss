@@ -1,5 +1,4 @@
 
-
 .navbar {
 
   .navbar-collapse a {
@@ -16,11 +15,10 @@
     text-transform: uppercase;
     text-decoration: underline;
     font-weight: 700;
-    &:hover {
+    &:hover, .active {
       color: #495057;
       text-decoration: none;
-    }
-    
+    } 
   }
   .dropdown {
     position: relative;
