@@ -27,11 +27,11 @@ import { LoginComponent } from './components/login/login.component';
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot([
-        // {
-        //   path: '',
-        //   redirectTo: '/home',
-        //   pathMatch: 'full',
-        // },
+        {
+          path: '',
+          redirectTo: '/home',
+          pathMatch: 'full',
+        },
         {
           path: 'home',
           component: MainComponent,

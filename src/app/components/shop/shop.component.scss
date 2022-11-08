@@ -1,4 +1,40 @@
+li {
+    list-style: none;
+}
+
 .shop-container {
     height: 100vh;
     margin: 100px 0;
+}
+
+.list-heading {
+    text-transform: uppercase;
+    padding: 0.7rem;
+    border-top: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+    h5 {
+        font-weight: 700;
+        line-height: 1.2;
+        color: inherit;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+    }
+}
+.nav-link {
+    color: #4fbfa8;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+}
+.list-group-item {
+    border: none;
+    a {
+        font-weight: normal;
+        text-transform: none !important;
+        display: block;
+        font-size: .7875rem;
+        color: #999;
+        
+    }
 }
