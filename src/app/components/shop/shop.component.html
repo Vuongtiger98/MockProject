@@ -4,31 +4,33 @@
       <h5>Categories</h5>
     </div>
     <ul class="men-category list-group">
-      <li>
-        <a href="" class="nav-link d-flex align-items-center justify-content-between">
-          Men
-        </a>
-      </li>
-      <li class="list-group-item"><a href="">Shirts</a></li>
-      <li class="list-group-item"><a href="">Pants</a></li>
-      <li class="list-group-item"><a href="">T-shirts</a></li>
-      <li class="list-group-item"><a href="">Accessories</a></li>
-    </ul>
-    <ul class="girls-category list-group">
-      <li>
-        <a href="" class="nav-link d-flex align-items-center justify-content-between">
-          Girls
-        </a>
-      </li>
-      <li class="list-group-item"><a href="">Shirts</a></li>
-      <li class="list-group-item"><a href="">Pants</a></li>
-      <li class="list-group-item"><a href="">T-shirts</a></li>
-      <li class="list-group-item"><a href="">Accessories</a></li>
+      <li class="list-group-item"><a href="">Men's clothing</a></li>
+      <li class="list-group-item"><a href="">Jewelery</a></li>
+      <li class="list-group-item"><a href="">Electronics</a></li>
+      <li class="list-group-item"><a href="">Women's clothing</a></li>
     </ul>
   </div>
   <div class="col-lg-9">
-  
+    <div class="row products" >
+      <div class="col-lg-4 col-md-6" *ngFor="let product of products">
+        <div class="product">
+          <div class="product-image">
+            <a [routerLink]="">
+              <img src="{{product.image}}" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="product-text">
+              <h3>{{product.title}}</h3>
+              <p class="product-price">
+                {{product.price | currency:'USD'}}
+              </p>
+          </div>
+          <div class="button-group">
+            <button class="btn btn-primary">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-
 
