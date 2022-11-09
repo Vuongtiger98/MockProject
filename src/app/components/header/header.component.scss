@@ -10,10 +10,12 @@
   .topbar-content{
     display: flex;
     text-align: center;
+    justify-content: center;
   }
   .search-section, .login-section {
     display:flex;
     align-items: center;
+    justify-content: center;
   }
   
   .topbar-search .form-control{

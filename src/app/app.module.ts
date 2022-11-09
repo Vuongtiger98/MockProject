@@ -45,6 +45,10 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
           component: ShopComponent,
         },
         {
+          path: "products/:id",
+          component: ProductDetailComponent,
+        },
+        {
           path: 'login',
           component: LoginComponent,
         }

@@ -1,0 +1,107 @@
+.container {
+    margin-top: 4rem;
+}
+.page-top {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
+.detail-heading {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #4fbfa8;
+    margin: 8px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 4px;
+}
+.category-heading {
+    font-weight: normal;
+    color: #8a9db1;
+}
+.product-main {
+    margin-bottom: 30px;
+
+    .product-image {
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    .ribbon {
+        text-transform: uppercase;
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        position: absolute;
+        color: #fff;
+    }
+    .ribbon::before,
+    .ribbon::after {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        display: block;
+        border: 3px solid #1eb5ff;
+    }
+    .ribbon span {
+        position: absolute;
+        display: block;
+        width: 165px;
+        padding: 5px 0;
+        background-color: #1eb5ff;
+        box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    }
+    .ribbon-top-right {
+        top: -3px;
+        right: -3px;
+    }
+    .ribbon-top-right::before,
+    .ribbon-top-right::after {
+        border-top-color: transparent;
+        border-right-color: transparent;
+    }
+    .ribbon-top-right::before {
+        top: 0;
+        left: 0;
+    }
+    .ribbon-top-right::after {
+        bottom: 0;
+        right: 0;
+    }
+    .ribbon-top-right span {
+        left: -22px;
+        top: 30px;
+        transform: rotate(45deg);
+    }
+    .price {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .btn-outline-primary {
+        cursor: pointer;
+        color: #4fbfa8;
+        font-weight: 700;
+        background-color: transparent;
+        background-image: none;
+        border-color: #4fbfa8;
+        border-radius: 0;
+        &:hover {
+            color: #fff;
+            background-color: #4fbfa8;
+            border: #4fbfa8;
+        }
+    }
+    .product-details {
+        margin-top: 30px;
+        padding-top: 30px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-top: solid 1px #e9ecef;
+        border-bottom: solid 1px #e9ecef;
+    }
+}
+    
