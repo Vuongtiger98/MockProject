@@ -2,12 +2,12 @@
   <div class="container d-flex justify-content-center">
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav mx-auto">
-        <li class="nav-item">
+        <li class="nav-item active">
           <a [routerLink]="['/home']" routerLinkActive="active"class="nav-link" >
             Homepage
           </a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown active" *ngIf="authService.isLoggedIn()">
           <a [routerLink]="['/shop']" routerLinkActive="active" class="nav-link dropdown-toggle">
             Shop
           </a>

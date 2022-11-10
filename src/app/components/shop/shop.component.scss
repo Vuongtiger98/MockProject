@@ -10,7 +10,6 @@ li {
     margin: 64px 0;
 }
 .category-list {
-    position: fixed;
     .list-heading {
         text-transform: uppercase;
         padding: 0.7rem;
@@ -90,5 +89,15 @@ li {
             padding: 10px 30px;
             letter-spacing: 2px;
         }
+    }
+}
+
+@media (max-width: 991px) {
+    .col-lg-3 {
+        display: none;
+    }
+
+    .shopcontainer.row {
+
     }
 }
