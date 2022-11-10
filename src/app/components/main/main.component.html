@@ -1,6 +1,6 @@
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active">
+      <div class="carousel-item fade" [class.active] = "selectedSlide === 1">
         <img src="../../../assets/img/intro1.png" class="d-block w-100" alt="...">
         <div class="overlay"></div>
         <div class="content">
@@ -8,23 +8,41 @@
           <h1 class="mb-8">Hipster E-commerce Theme</h1>
           <p class="mb-16">
             <a [routerLink]="['/shop']">
-              <img src="../../../assets/img/logo-white-small.png" alt="">
+              <img src="../../../assets/img/logo-white-small.png" alt="" >
             </a>
           </p>
         </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item fade" [class.active] = "selectedSlide === 2">
         <img src="../../../assets/img/intro2.png" class="d-block w-100" alt="...">
+        <div class="overlay"></div>
+        <div class="content">
+          <h3>Variety of product and friendly interface for customer</h3>
+          <p class="mb-16">
+            <a [routerLink]="['/shop']">
+              <img src="../../../assets/img/logo-white-small.png" alt="" >
+            </a>
+          </p>
+        </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item fade" [class.active] = "selectedSlide === 3">
         <img src="../../../assets/img/intro3.png" class="d-block w-100" alt="...">
+        <div class="overlay"></div>
+        <div class="content">
+          <h3 class="mb-8">And much more</h3>
+          <p class="mb-16">
+            <a [routerLink]="['/shop']">
+              <img src="../../../assets/img/logo-white-small.png" alt="" >
+            </a>
+          </p>
+        </div>
       </div>
     </div>
-   <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+   <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev" (click)="previousSlide()">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next" (click)="nextSlide()">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </button>
