@@ -13,8 +13,15 @@
     </div>
   </div>
   <div class="col-lg-9">
+    <div class="search-product">
+      <input class="form-control" type="text" name="search" [(ngModel)]="searchText" 
+      autocomplete="off" placeholder="&#61442; Searching product">
+      <br>
+      <br>
+    </div>
+    
     <div class="row products" >
-      <div class="col-lg-4 col-md-6" *ngFor="let product of products">
+      <div class="col-lg-4 col-md-6" *ngFor="let product of products | myFilter:searchText:['title']">
         <div class="product">
           <div class="product-image">
             <a [routerLink]="['/products',product.id]">
