@@ -8,10 +8,19 @@ export class MainComponent implements OnInit {
   selectedSlide: number = 1;
   constructor() {}
   ngOnInit(): void {}
+
   nextSlide() {
-    this.selectedSlide += 1;
+    if (this.selectedSlide == 3) {
+      this.selectedSlide = 1;
+    } else {
+      this.selectedSlide += 1;
+    }
   }
   previousSlide() {
-    this.selectedSlide -= 1;
+    if (this.selectedSlide == 1) {
+      this.selectedSlide = 3;
+    } else {
+      this.selectedSlide -= 1;
+    }
   }
 }
